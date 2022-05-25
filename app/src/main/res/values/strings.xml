@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">GPSTrackingDemo</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="textview">textview</string>
+    <string name="lat">Lat:</string>
+    <string name="waypoints">WayPoints:</string>
+    <string name="address">Address:</string>
+    <string name="_0">0</string>
+    <string name="new_waypoint">new WayPoint</string>
+    <string name="show_waypoint_list">show waypoint list</string>
+    <string name="show_map">Show Map</string>
+    <string name="gps_savepower">GPS/SavePower</string>
+    <string name="location_updates">Location Updates</string>
+    <string name="off">Off</string>
+    <string name="updates">Updates:</string>
+    <string name="sensor">Sensor:</string>
+    <string name="speed">Speed:</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="lon">lon:</string>
+    <string name="_0_00">0.00</string>
+    <string name="altitude">Altitude:</string>
+    <string name="cell_tower_wifi">Cell Tower + Wifi</string>
+    <string name="find_route">find route</string>
+    <string name="home_page">home page</string>
+    <string name="steps">Steps</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signuphere">signuphere</string>
+    <string name="signup">signup</string>
+    <string name="fullname">fullname</string>
+    <string name="email">email</string>
+    <string name="loginhere">loginhere</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">login</string>
 </resources>

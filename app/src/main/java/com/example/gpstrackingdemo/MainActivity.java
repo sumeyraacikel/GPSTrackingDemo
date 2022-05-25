@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int PERMISSION_FINE_LOCATION = 99;
     TextView tv_lat, tv_lon, tv_altitude, tv_accuracy, tv_speed, tv_sensor, tv_updates, tv_address, tv_wayPointCounts, btn_showMap;
 
-    Button btn_newWaypoint, btn_showWayPointList;
+    Button btn_newWaypoint, btn_showWayPointList, btn_findRoute, btn_homePage;
 
     Switch sw_locationupdates, sw_gps;
 
@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         btn_showWayPointList = findViewById(R.id.btn_showWayPoint);
         tv_wayPointCounts = findViewById(R.id.tv_countOfCrumbs);
         btn_showMap = findViewById(R.id.btn_showMap);
-
+        btn_findRoute = findViewById(R.id.btn_findRoute);
+        btn_homePage = findViewById(R.id.btn_homePage);
 
 
         locationRequest = new LocationRequest();
@@ -110,10 +111,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_findRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, FindRoute.class);
+                startActivity(i);
+            }
+        });
         btn_showMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_homePage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, HomePage.class);
                 startActivity(i);
             }
         });
